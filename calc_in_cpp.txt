@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int firstNumber, SecondNumber;
+    char ArithmeticOperator;
+    
+    cout << "Enter First Number: ";
+    cin >> firstNumber;
+    
+    cout << "Enter Second Number: ";
+    cin >> SecondNumber;
+    
+    cout << "Enter any one arithmetic operator: ";
+    cin >> ArithmeticOperator;
+    
+    if(ArithmeticOperator == '+')
+    {
+        int sum = firstNumber + SecondNumber;
+        cout << " Addition of " << firstNumber << " and " <<  SecondNumber << " is " << sum;
+    }
+    
+    else if(ArithmeticOperator == '-')
+    {
+        int sub = firstNumber - SecondNumber;
+        cout << " Subtraction of " << firstNumber << " and " <<  SecondNumber << " is " << sub;
+    }
+    
+    else if(ArithmeticOperator == '*')
+    {
+        int mult = firstNumber * SecondNumber;
+        cout << " Multiplication of " << firstNumber << " and " <<  SecondNumber << " is " << mult;
+    }
+    
+    else if(ArithmeticOperator == '/')
+    {
+        int division = firstNumber / SecondNumber;
+        cout << " Division of " << firstNumber << " and " <<  SecondNumber << " is " << division;
+    }
+    
+    else if(ArithmeticOperator == '%')
+    {
+        int mod = firstNumber % SecondNumber;
+        cout << " Modulus of " << firstNumber << " and " <<  SecondNumber << " is " << mod;
+    }
+    
+    else{
+        cout << "Please Enter Valid Operator";
+    }
+    
+    return 0;
+}
